@@ -8,13 +8,13 @@ export default function WebsiteLayout({
   children: React.ReactNode;
 }>) {
   return (
-   <PageLoaderProvider>
-     <ScrollProvider>
-      <Toaster position="top-center" richColors />
-      <Navbar />
-      {children}
-      <Footer />
-    </ScrollProvider>
-   </PageLoaderProvider>
+    <PageLoaderProvider>
+      <ScrollProvider>
+        <Toaster position="top-center" richColors />
+        <Navbar />
+        {children}
+        <Footer />
+      </ScrollProvider>
+    </PageLoaderProvider>
   );
 }
