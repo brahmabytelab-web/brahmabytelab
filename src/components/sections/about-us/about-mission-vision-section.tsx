@@ -36,17 +36,17 @@ export const AboutMissionVisionSection: React.FC = () => {
         <Image
           data-aos="fade-up"
           data-aos-delay={1000}
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+          src="/images/about-us/mission-vision/mission-vision.jpeg"
           alt="Team collaboration"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-center"
           referrerPolicy="no-referrer"
           width={1200}
           height={600}
         />
         <div className="absolute inset-0 bg-linear-to-t from-slate-900/60 to-transparent"></div>
         <div className="absolute right-8 bottom-8 left-8">
-          <div className="rounded-2xl border border-white/20 bg-white/10 p-6 text-white backdrop-blur-md">
-            <div className="mb-1 text-3xl font-bold">4+ Years</div>
+          <div className="rounded-2xl border border-white/20 bg-white/10 p-2 md:p-6 text-white backdrop-blur-md">
+            <div className="mb-1 md:text-3xl font-bold">4+ Years</div>
             <div className="font-medium text-slate-200">
               Of Engineering Excellence
             </div>

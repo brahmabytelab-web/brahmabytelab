@@ -13,18 +13,18 @@ export const Footer: React.FC = () => {
       <Container className="space-y-20">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <div className="col-span-1">
-            <Link href={ROUTES.home} className="mb-6 flex items-center gap-2">
+            <Link href={ROUTES.home} className="mb-6 flex items-center gap-1">
               <div className="">
                 <Image
-                src='/images/logos/Brahmabytelab-logo-1.svg'
-                height={40}
-                width={40}
-                alt='brahmabytelab-logo'
+                  src="/images/logos/Brahmabytelab-logo-1.svg"
+                  height={60}
+                  width={60}
+                  alt="brahmabytelab-logo"
                 />
               </div>
-              <Typography variant={'h5'} className="font-display">
-                BrahmabyteLab
-              </Typography>
+              <span className="font-display text-xl font-bold tracking-tight text-white md:text-2xl">
+                BrahmaByteLab
+              </span>
             </Link>
             <Typography variant={'small'} className="max-w-md text-slate-400">
               Engineering the future of SaaS. We build scalable, intuitive, and

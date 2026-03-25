@@ -15,8 +15,8 @@ export const LandingHeroImageSection: React.FC = () => {
 
       <div className="group relative aspect-4/3 w-full overflow-hidden rounded-[2rem] border-4 border-white shadow-2xl sm:aspect-aspect-video sm:rounded-3xl sm:border sm:border-slate-200/50 md:aspect-2.5/1">
         <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80"
-          alt="Brahmabyte Team Collaboration"
+          src="/images/landing-page/hero-section/hero-section-1.jpeg"
+          alt="Brahmabyte-Team"
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           fill
           referrerPolicy="no-referrer"
@@ -41,8 +41,8 @@ export const LandingHeroImageSection: React.FC = () => {
       >
         <Image
           fill
-          src="/images/landing-page/pooja-budathoki.png"
-          alt="Senior Engineer"
+          src="/images/landing-page/hero-section/pooja-budathoki.png"
+          alt="Pooja-budathoki brahmabytelab"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           referrerPolicy="no-referrer"
         />
@@ -61,8 +61,8 @@ export const LandingHeroImageSection: React.FC = () => {
       >
         <Image
           fill
-          src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80"
-          alt="Product Manager"
+          src="/images/landing-page/hero-section/hero-section-2.jpeg"
+          alt="brahmabytelab-employee"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           referrerPolicy="no-referrer"
         />

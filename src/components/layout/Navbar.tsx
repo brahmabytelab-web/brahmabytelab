@@ -39,7 +39,7 @@ export const Navbar: React.FC = () => {
       )}
     >
       <Container className="flex justify-between">
-        <Link href={ROUTES.home} className="flex items-center gap-2">
+        <Link href={ROUTES.home} className="flex items-center gap-1 ">
           <div>
             <Image
               src="/images/logos/Brahmabytelab-logo-1.svg"
@@ -48,8 +48,8 @@ export const Navbar: React.FC = () => {
               alt="brahmabytelab-logo"
             />
           </div>
-          <span className="font-display text-xl font-bold tracking-tight text-slate-900">
-            BrahmabyteLab
+          <span className="font-display text-xl md:text-2xl font-bold tracking-tight text-slate-900">
+            BrahmaByteLab
           </span>
         </Link>
         <nav className="hidden items-center gap-8 lg:flex">
@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
               className="flex w-75 flex-col border-l border-slate-100 bg-white p-6 sm:w-100"
             >
               <SheetTitle className="mb-8 flex items-center justify-between gap-2">
-                <section className="flex items-center gap-x-2">
+                <section className="flex items-center gap-x-1">
                   <div>
                     <Image
                       src="/images/logos/Brahmabytelab-logo-1.svg"
@@ -92,7 +92,7 @@ export const Navbar: React.FC = () => {
                     />
                   </div>
                   <span className="font-display text-xl font-bold tracking-tight text-slate-900">
-                    BrahmabyteLab
+                     BrahmaByteLab
                   </span>
                 </section>
                 <SheetClose>

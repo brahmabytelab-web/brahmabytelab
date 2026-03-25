@@ -109,7 +109,7 @@ export const landingProductsData = [
 
 export const employeesData = [
   {
-    name: 'Aryan Tamang',
+    name: 'Aryan',
     role: 'Full Stack Developer',
     quote:
       'Working at Brahmabytelab has been a transformative experience. I applied my theoretical knowledge to real-world engineering challenges, which accelerated my learning and helped me develop technical expertise and problem-solving skills.',
@@ -118,7 +118,16 @@ export const employeesData = [
     tag: 'Leadership',
   },
   {
-    name: 'Madan Golay Tamang',
+    name: 'Nakhul',
+    role: 'Research and Development',
+    quote:
+      'I enjoy collaborating with my team in R&D to transform creative ideas into practical results, constantly experimenting with new approaches and technologies to drive innovation and solve complex challenges.',
+    image: '/images/landing-page/testimonials/Nakhul.png',
+    metric: 'Innovative Solutions',
+    tag: 'Research & Innovation',
+  },
+  {
+    name: 'Madan',
     role: 'Frontend Developer',
     quote:
       'Brahmabytelab has been pivotal in advancing my career. I have enhanced my frontend skills while improving collaboration and teamwork, allowing me to grow professionally and contribute meaningfully to the team’s success.',
@@ -127,7 +136,7 @@ export const employeesData = [
     tag: 'Professional Growth',
   },
   {
-    name: 'Jackson Karki Chhetri',
+    name: 'Jackson',
     role: 'Graphic Designer',
     quote:
       'At Brahmabytelab, I bring brands’ stories to life through creative visuals. By combining design, strategy, and storytelling, I craft experiences that engage audiences and reflect each brand’s essence.',
@@ -139,7 +148,7 @@ export const employeesData = [
 
 export const internsData = [
   {
-    name: 'Binit Limbu',
+    name: 'Binit',
     role: 'Backend Intern',
     quote:
       'During my time at Brahmabytelab, I gained a strong understanding of core foundations like SOLID principles and clean code practices. The experience has been highly valuable and greatly enriched my technical skills.',
@@ -148,7 +157,7 @@ export const internsData = [
     tag: 'Growth',
   },
   {
-    name: 'Birat Thapa',
+    name: 'Birat',
     role: 'SEO Intern',
     quote:
       'Starting as an SEO Intern provided a solid foundation in search fundamentals. I gained hands-on experience with SEO strategies and site architecture, which equipped me to handle complex projects and develop a long-term strategic mindset.',
@@ -157,7 +166,7 @@ export const internsData = [
     tag: 'Digital Marketing',
   },
   {
-    name: 'Kyurosh Pokharel',
+    name: 'Kyurosh',
     role: 'QA Intern',
     quote:
       'Working at Brahmabytelab has been a fantastic learning experience. The team is supportive and encourages growth, allowing me to work on real-world projects that improved my practical skills and prepared me for a strong start in the tech industry.',

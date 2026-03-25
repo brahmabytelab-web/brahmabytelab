@@ -12,18 +12,25 @@ export const PageLoaderProvider: React.FC<{ children: React.ReactNode }> = ({
   const pathname = usePathname();
 
   useEffect(() => {
-    // show loader on route change
-    const showLoader = setTimeout(() => setLoading(true), 0);
-    const hideLoader = setTimeout(() => setLoading(false), 800); // 1.2s
-    return () => {
-      clearTimeout(showLoader);
-      clearTimeout(hideLoader);
-    };
+    // Check if loader has been shown before
+    const hasLoadedBefore = localStorage.getItem('hasLoadedBefore');
+
+    if (!hasLoadedBefore) {
+      // First visit: show loader
+      const timer = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem('hasLoadedBefore', 'true'); // mark as shown
+      }, 800); // duration of loader
+
+      return () => clearTimeout(timer);
+    } else {
+      // Already visited: skip loader
+      setLoading(false);
+    }
   }, [pathname]);
 
   return (
     <>
-      {/* Loader Overlay */}
       <AnimatePresence>
         {loading && (
           <motion.div
@@ -33,7 +40,6 @@ export const PageLoaderProvider: React.FC<{ children: React.ReactNode }> = ({
             exit={{ opacity: 0, transition: { duration: 0.8 } }}
             className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-linear-to-br from-white via-gray-50 to-white"
           >
-            {/* Logo with subtle scale/fade */}
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -49,7 +55,6 @@ export const PageLoaderProvider: React.FC<{ children: React.ReactNode }> = ({
               />
             </motion.div>
 
-            {/* Optional pulsing dots */}
             <div className="mt-4 flex gap-2">
               {[0, 1, 2].map((i) => (
                 <motion.div
@@ -65,7 +70,6 @@ export const PageLoaderProvider: React.FC<{ children: React.ReactNode }> = ({
               ))}
             </div>
 
-            {/* Animated gradient loading bar */}
             <motion.div
               className="mt-6 h-1 w-36 overflow-hidden rounded-full bg-gray-200"
               initial={{ opacity: 0 }}
@@ -83,7 +87,6 @@ export const PageLoaderProvider: React.FC<{ children: React.ReactNode }> = ({
         )}
       </AnimatePresence>
 
-      {/* Main content */}
       <div
         className={loading ? 'pointer-events-none opacity-0' : 'opacity-100'}
       >
