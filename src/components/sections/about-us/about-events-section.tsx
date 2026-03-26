@@ -8,12 +8,9 @@ import { ArrowRight, Calendar, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
 
 export const AboutEventsSection: React.FC = () => {
   const [activeEventTab, setActiveEventTab] = React.useState(eventsData[0].id);
-  const [lightboxIndex, setLightboxIndex] = React.useState(-1);
 
   const activeEvent =
     eventsData.find((e) => e.id === activeEventTab) || eventsData[0];
@@ -139,10 +136,7 @@ export const AboutEventsSection: React.FC = () => {
             {/* Photos Grid */}
             <div className="grid grid-cols-1 gap-4 md:h-150 md:grid-cols-2">
               {/* Main photo */}
-              <div
-                className="group relative aspect-4/3 cursor-zoom-in overflow-hidden rounded-2xl md:aspect-auto md:h-full"
-                onClick={() => setLightboxIndex(0)}
-              >
+              <div className="group relative aspect-4/3 overflow-hidden rounded-2xl md:aspect-auto md:h-full">
                 <Image
                   height={400}
                   width={400}
@@ -159,8 +153,7 @@ export const AboutEventsSection: React.FC = () => {
                 {activeEvent.images.slice(1, 5).map((photo, idx) => (
                   <div
                     key={idx}
-                    className="group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl"
-                    onClick={() => setLightboxIndex(idx + 1)}
+                    className="group relative aspect-square overflow-hidden rounded-2xl"
                   >
                     <Image
                       height={300}
@@ -176,12 +169,6 @@ export const AboutEventsSection: React.FC = () => {
               </div>
             </div>
           </FadeSlideWrapper>
-          <Lightbox
-            index={lightboxIndex}
-            open={lightboxIndex >= 0}
-            close={() => setLightboxIndex(-1)}
-            slides={activeEvent.images.map((src) => ({ src }))}
-          />
         </section>
       </Container>
     </section>

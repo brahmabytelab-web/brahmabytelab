@@ -1,7 +1,4 @@
 'use client';
-
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
 import { useState } from 'react';
 import { Masonry } from '@mui/lab';
 import Image from 'next/image';
@@ -11,8 +8,6 @@ interface GalleryMasonryProps {
 }
 
 export const GalleryMasonry: React.FC<GalleryMasonryProps> = ({ images }) => {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
@@ -21,11 +16,7 @@ export const GalleryMasonry: React.FC<GalleryMasonryProps> = ({ images }) => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="relative cursor-zoom-in overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
-            onClick={() => {
-              setCurrentIndex(index);
-              setLightboxOpen(true);
-            }}
+            className="relative overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
           >
             <Image
               height={500}
@@ -40,7 +31,7 @@ export const GalleryMasonry: React.FC<GalleryMasonryProps> = ({ images }) => {
       </Masonry>
 
       {/* Lightbox */}
-      {lightboxOpen && (
+      {/* {lightboxOpen && (
         <Lightbox
           open={lightboxOpen}
           index={currentIndex}
@@ -48,7 +39,7 @@ export const GalleryMasonry: React.FC<GalleryMasonryProps> = ({ images }) => {
           slides={images.map((src) => ({ src }))}
           animation={{ fade: 200 }}
         />
-      )}
+      )} */}
     </>
   );
 };
