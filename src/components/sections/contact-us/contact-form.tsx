@@ -89,7 +89,7 @@ export const ContactForm: React.FC = () => {
           >
             <Input
               id="fullName"
-              placeholder="Your Full Name"
+              placeholder="Enter your full name"
               aria-invalid={!!errors.fullName}
               {...register('fullName')}
               className={getFormInputStyles(
@@ -108,7 +108,7 @@ export const ContactForm: React.FC = () => {
             <Input
               id="email"
               type="email"
-              placeholder="john@company.com"
+              placeholder="Enter your email address"
               aria-invalid={!!errors.email}
               {...register('email')}
               className={getFormInputStyles(
@@ -126,7 +126,7 @@ export const ContactForm: React.FC = () => {
           >
             <Input
               id="company"
-              placeholder="Your Company Inc."
+              placeholder="Enter your compnay name"
               aria-invalid={!!errors.company}
               {...register('company')}
               className={getFormInputStyles(

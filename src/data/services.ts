@@ -14,7 +14,7 @@ export const brahmabyteServicesData = [
             "UI Component Systems",
         ],
         image:
-            "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop",
     },
     {
         id: "backend",

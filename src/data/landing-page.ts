@@ -117,15 +117,15 @@ export const employeesData = [
     metric: '6+ Projects Led',
     tag: 'Leadership',
   },
-  {
-    name: 'Parinita',
-    role: 'Quality Assurance',
-    quote:
-      'It was a really nice experience working at Brahmabyte, and I learned a lot of things during my time here. The environment was good and helped me grow in my role. It could have been better if we had a Senior QA for guidance and stronger learning support.',
-    image: '/images/landing-page/testimonials/parinita.jpg',
-    metric: 'Quality Improvement',
-    tag: 'QA & Testing',
-  },
+  // {
+  //   name: 'Parinita',
+  //   role: 'Quality Assurance',
+  //   quote:
+  //     'It was a really nice experience working at Brahmabyte, and I learned a lot of things during my time here. The environment was good and helped me grow in my role. It could have been better if we had a Senior QA for guidance and stronger learning support.',
+  //   image: '/images/landing-page/testimonials/parinita.jpg',
+  //   metric: 'Quality Improvement',
+  //   tag: 'QA & Testing',
+  // },
   {
     name: 'Nakhul',
     role: 'Research and Development',
