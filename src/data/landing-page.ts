@@ -117,16 +117,16 @@ export const employeesData = [
     metric: '6+ Projects Led',
     tag: 'Leadership',
   },
-  {
-    name: 'Parinita',
-    role: 'Quality Assurance',
-    quote:
-      'It was a really nice experience working at Brahmabyte, and I learned a lot of things during my time here. The environment was good and helped me grow in my role.',
-    image: '/images/landing-page/testimonials/parinita.jpg',
-    metric: 'Quality Improvement',
-    tag: 'QA & Testing',
-  },
- 
+  // {
+  //   name: 'Parinita',
+  //   role: 'Quality Assurance',
+  //   quote:
+  //     'It was a really nice experience working at Brahmabyte, and I learned a lot of things during my time here. The environment was good and helped me grow in my role.',
+  //   image: '/images/landing-page/testimonials/parinita.jpg',
+  //   metric: 'Quality Improvement',
+  //   tag: 'QA & Testing',
+  // },
+
   {
     name: 'Madan',
     role: 'Frontend Developer',
@@ -157,7 +157,7 @@ export const internsData = [
     metric: 'Full-time Offer',
     tag: 'Growth',
   },
-   {
+  {
     name: 'Nakhul',
     role: 'Research and Development Intern',
     quote:
