@@ -38,6 +38,11 @@ export const socialLinksData = [
     icon: "/images/logos/tiktok.svg",
     links: "https://www.tiktok.com/@brahmabyte.lab?_r=1&_t=ZS-94kg29FFTz0",
   },
+  {
+    label: "Instagram",
+    icon: "/images/logos/instagram.svg",
+    links: "https://www.instagram.com/labbrahmabyte?igsh=NndpNDJ6dGEybDd3",
+  },
 ];
 export const footerContentData = [
   { label: "Company", content: companyData },
